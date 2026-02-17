@@ -1,0 +1,183 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(80deg, #0f172a, #1e293b);
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 130px;
+    margin-right: 5px;
+    filter: invert(1);
+  }
+}
+
+.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background: #2563eb;
+}
+
+.loading {
+  text-align: center;
+  color: #38bdf8;
+}
+
+.error {
+  text-align: center;
+  color: #ef4444;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card-body h3 {
+  margin: 0;
+}
+
+.username {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.bio {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.profile-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #22c55e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.profile-btn:hover {
+  background: #16a34a;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+}
+
+.pagination button:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+.pagination span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#copy{
+  text-align: center;
+  user-select: none;
+  margin-top: 8rem;
+  a{
+    color: white;
+
+  }
+  
+}
+.no-result-err{
+  text-align: center;
+  color: #404d62;
+  user-select: none;
+}
+
+.repo a{
+  color: white;
+}
