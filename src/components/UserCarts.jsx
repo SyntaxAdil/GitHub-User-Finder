@@ -15,10 +15,7 @@ const UserCarts = ({githubUser}) => {
           <h3>{githubUser.name || githubUser.login}</h3>
           <p className="username">@{githubUser.login}</p>
 
-          <div className="info">           
-            <span className="repo">📦 Repo: <a href={githubUser.repos_url} target="_blank">{githubUser.repos_url}</a> </span>
-          </div>
-
+          
           <a
             href={githubUser.html_url}
             target="_blank"
