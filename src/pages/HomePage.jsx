@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import UserCarts from "../components/UserCarts";
 
 const HomePage = () => {
   const [error, setError] = useState("");
@@ -56,33 +57,7 @@ const HomePage = () => {
  {totalCount===0 && <p className="no-result-err">No result found</p>}
   <div className="user-grid">
     {user.map((githubUser) => (
-      <div key={githubUser.id} className="card">
-        <img
-          src={githubUser.avatar_url}
-          alt={githubUser.login}
-          className="avatar"
-        />
-
-        <div className="card-body">
-          <h3>{githubUser.name || githubUser.login}</h3>
-          <p className="username">@{githubUser.login}</p>
-
-          <div className="info">
-            <span>📍 {githubUser.location || "Not Available"}</span>
-            
-            <span className="repo">📦 Repo: <a href={githubUser.repos_url} target="_blank">{githubUser.repos_url}</a> </span>
-          </div>
-
-          <a
-            href={githubUser.html_url}
-            target="_blank"
-            rel="noreferrer"
-            className="profile-btn"
-          >
-            View Profile
-          </a>
-        </div>
-      </div>
+     <UserCarts githubUser={githubUser} />
     ))}
   </div>
 
